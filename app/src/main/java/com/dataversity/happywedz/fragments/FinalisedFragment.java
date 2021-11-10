@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 public class FinalisedFragment extends Fragment {
     Button btn_continue;
+    View v;
 
     public FinalisedFragment() {
         // Required empty public constructor
@@ -27,7 +28,7 @@ public class FinalisedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.finalised_fragment, container, false);
+        v= inflater.inflate(R.layout.finalised_fragment, container, false);
 
 
         return v;
