@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Happy Wedz</string>
+    <string name="skip">Skip</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="login_using_phone_number">login using phone number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="Phone_number">Phone Number</string>
+    <string name="Signup">Signup</string>
+    <string name="signup_using_phone_number">Signup using phone number</string>
+    <string name="user_name">User Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="Password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Signup</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="mobile_number">Mobile No.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="please_enter_mobile_number">Please enter your Mobile number to receive a link to create new password</string>
+    <string name="otp_verfication">OTP Verification</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_sent">OTP has been sent to</string>
+    <string name="verify">Verify</string>
+    <string name="title_home">Home</string>
+    <string name="title_vendore">Vendor</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_ideas">Ideas</string>
+    <string name="title_planning">Planning</string>
+    <string name="view_on_map"><u>View on map</u></string>
+    <string name="pricing_info"><u>Pricing Info</u></string>
+</resources>

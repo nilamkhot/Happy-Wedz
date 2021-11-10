@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dataversity.happywedz.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_vendore"
+        android:name="com.dataversity.happywedz.fragments.VendorFragment"
+        android:label="@string/title_vendore"
+        tools:layout="@layout/vendor_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.dataversity.happywedz.fragments.ShopFragment"
+        android:label="@string/title_shop"
+        tools:layout="@layout/shop_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_idea"
+        android:name="com.dataversity.happywedz.fragments.IdeasFragment"
+        android:label="@string/title_ideas"
+        tools:layout="@layout/idea_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_planning"
+        android:name="com.dataversity.happywedz.fragments.PlanningFragment"
+        android:label="@string/title_planning"
+        tools:layout="@layout/planning_fragment" />
+
+</navigation>

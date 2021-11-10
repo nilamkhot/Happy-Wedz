@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Write a review"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="-20dp"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_5"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="Write a Review for your
+                            wedding vendors"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_20"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textSize="14dp"
+                    android:text="Had a great experience with your wedding vendor? Please tell us your experience below."/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="Select a vendor*"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type vendor name*"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="Rate vendor*"
+                    android:textSize="18dp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:layout_gravity="start"
+                    android:theme="@style/RatingBar1"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:text="Your Experience*"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Write about your personal experience with this vendor using at least 50 words."
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="10"
+                    android:paddingTop="@dimen/spacing_middle"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="date"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:editable="false"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="Share on Facebook"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginBottom="@dimen/spacing_large"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_circle_pink"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Submit Review"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingBottom="@dimen/spacing_medium"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mxlarge" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

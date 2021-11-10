@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="HappyWedz Genie"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="-20dp"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_5"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mlarge">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_pink"
+                android:fontFamily="@font/segoe_ui"
+                android:text="Just fill in the requirements and we will connect
+within 24 hours"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name*"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_medium">
+
+                <com.hbb20.CountryCodePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:ccp_defaultNameCode="IN"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    app:ccp_defaultLanguage="ENGLISH"
+                    app:ccp_contentColor="@color/black"
+                    app:ccp_arrowColor="@color/black"
+                    app:ccp_textSize="18sp"
+                    app:ccp_arrowSize="18dp"
+                    app:ccp_textGravity="RIGHT"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showFlag="true"
+                    app:ccp_showFullName="false"
+                    app:ccp_clickable="true"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_autoFormatNumber="false"
+                    app:ccp_selectionMemoryTag="signupCCP"
+                    app:ccp_showArrow="true"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_hintExampleNumberType="FIXED_LINE"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccpDialog_allowSearch="false"
+                    app:ccpDialog_showPhoneCode="false"
+                    app:ccpDialog_showFastScroller="false"
+                    app:ccpDialog_fastScroller_bubbleColor="@color/pink"
+                    app:ccpDialog_fastScroller_handleColor="@color/pink"
+                    app:ccpDialog_backgroundColor="@color/white"
+                    app:ccpDialog_searchEditTextTint="@color/grey_20"
+                    app:ccpDialog_textColor="@color/black"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccpDialog_showFlag="true"
+                    app:ccpDialog_showTitle="false"
+                    app:ccpDialog_initialScrollToSelection="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile number*"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="phone"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email address*"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Function date*"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="date"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No of guest*(min 50)"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Budget-per function"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:textColorHint="@color/grey_20"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoe_ui"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_circle_pink"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="@dimen/spacing_mlarge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mxlarge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_90"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="start"
+                android:text="@string/login"
+                android:layout_marginBottom="-15dp"/>
+
+            <View
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="2dp"
+                android:background="@color/pink"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:padding="@dimen/spacing_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/welcome_text_color"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/login_using_phone_number"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_pink_outline"
+                android:layout_marginTop="@dimen/spacing_large">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:background="@null"
+                    android:textSize="18sp"
+                    android:textColor="@color/grey_90"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="+91"
+                    android:maxLength="3"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:layout_marginLeft="@dimen/spacing_mlarge"/>
+
+                <EditText
+                    android:id="@+id/brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="91********"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="phone"
+                    android:textSize="18sp"
+                    android:maxLength="12"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/grey_90"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_pink"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/send_otp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/spacing_mxlarge"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="@dimen/spacing_mlarge"
+                android:alpha="0.5"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/create_button_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or login with"
+                    android:textSize="16dp"
+                    android:padding="@dimen/spacing_middle"
+                    android:textColor="@color/create_button_color"/>
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/create_button_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/spacing_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/google"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

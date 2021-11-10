@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Send Message"
+                android:fontFamily="@font/segoe_ui"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="-20dp"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_5"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hi Grand Tamanna Hotel,"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full name*"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_medium">
+
+                    <com.hbb20.CountryCodePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:ccp_defaultNameCode="IN"
+                        android:background="@drawable/btn_rounded_pink_outline"
+                        app:ccp_defaultLanguage="ENGLISH"
+                        app:ccp_contentColor="@color/black"
+                        app:ccp_arrowColor="@color/black"
+                        app:ccp_textSize="18sp"
+                        app:ccp_arrowSize="18dp"
+                        app:ccp_textGravity="RIGHT"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showFlag="true"
+                        app:ccp_showFullName="false"
+                        app:ccp_clickable="true"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_autoFormatNumber="false"
+                        app:ccp_selectionMemoryTag="signupCCP"
+                        app:ccp_showArrow="true"
+                        app:ccp_hintExampleNumber="true"
+                        app:ccp_hintExampleNumberType="FIXED_LINE"
+                        app:ccpDialog_keyboardAutoPopup="false"
+                        app:ccpDialog_allowSearch="false"
+                        app:ccpDialog_showPhoneCode="false"
+                        app:ccpDialog_showFastScroller="false"
+                        app:ccpDialog_fastScroller_bubbleColor="@color/pink"
+                        app:ccpDialog_fastScroller_handleColor="@color/pink"
+                        app:ccpDialog_backgroundColor="@color/white"
+                        app:ccpDialog_searchEditTextTint="@color/grey_20"
+                        app:ccpDialog_textColor="@color/black"
+                        app:ccpDialog_showCloseIcon="true"
+                        app:ccpDialog_showFlag="true"
+                        app:ccpDialog_showTitle="false"
+                        app:ccpDialog_initialScrollToSelection="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile number*"
+                        android:background="@drawable/btn_rounded_pink_outline"
+                        android:layout_gravity="center"
+                        android:gravity="center|start"
+                        android:inputType="phone"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/grey_20"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/segoe_ui"
+                        android:paddingLeft="@dimen/spacing_mlarge"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email address*"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Function date*"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="date"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No of guest*(min 50)"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No of rooms(optional)"
+                    android:background="@drawable/btn_rounded_pink_outline"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:textColorHint="@color/grey_20"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe_ui"
+                    android:paddingLeft="@dimen/spacing_mlarge"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Function Type"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pre-wedding"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wedding"
+                        android:layout_marginLeft="@dimen/spacing_mxlarge"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Function Type"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evening"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Day"
+                        android:layout_marginLeft="@dimen/spacing_mxlarge"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get update on WhatsApp"
+                        android:fontFamily="@font/segoe_ui"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingBottom="@dimen/spacing_medium"
+                        />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/SwitchTheme"
+                        android:checked="true"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_40"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_large"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:alpha="0.9"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/send_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_pink"
+                        android:text="Send Message"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:alpha="1"
+                        android:layout_marginRight="@dimen/spacing_mxlarge"
+                        android:background="@drawable/btn_circular_pink_outline1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingRight="50dp"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingBottom="@dimen/spacing_medium"
+                        android:layout_gravity="center"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="50dp"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_round_phone_24"
+                            android:background="@color/green"
+                            android:scaleType="fitCenter"
+                            android:padding="@dimen/spacing_large"
+                            app:tint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mxlarge" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

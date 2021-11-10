@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/spacing_mxlarge"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:gravity="center|top"
+        android:layout_margin="@dimen/spacing_large">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_mxlarge"
+            android:src="@drawable/ic_baseline_check_circle_outline_24_green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Sent!"
+            android:textSize="24dp"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/dark_pink"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The response from the vendor will be
+available on your email as well as your
+app inbox."
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inbox can be accessed from the sidebar"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/grey_20"
+            android:layout_marginBottom="@dimen/spacing_large"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
